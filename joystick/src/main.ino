@@ -36,9 +36,9 @@ buttonMap_t buttonMapping[] =
 
 void setup()
 {
-  Joystick.useManualSend(true);
-
   pinMode(LED_PIN, OUTPUT);
+
+  Joystick.useManualSend(true);
 
   buttonMap_t * bm = buttonMapping;
   while (bm->button != BUTTONMAP_END && bm->pin != BUTTONMAP_END)
